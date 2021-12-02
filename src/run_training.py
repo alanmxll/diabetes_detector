@@ -5,7 +5,7 @@ from packages.preprocess_data import *
 from packages.train_model import run_model_training
 
 # 0. Path to data
-path_to_data = '../data/diabetes_data.csv'
+path_to_data = 'data/diabetes_data.csv'
 
 # 1. Prepare the data
 prepared_data = prepare_data(path_to_data)
@@ -19,4 +19,4 @@ model = run_model_training(train_test_data['x_train'], train_test_data['x_test']
                            train_test_data['y_train'], train_test_data['y_test'])
 
 # 4. Save the trained model and vectorizer
-joblib.dump(model, '../model/diabete_detector_model.pkl')
+joblib.dump(model, 'model/diabete_detector_model.pkl')

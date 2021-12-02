@@ -11,10 +11,10 @@ def prepare_data(path_to_data: str) -> Dict:
     # Read data from path
     data = pd.read_csv(path_to_data)
 
-    print("\n1. First 7 rows: \n1")
+    print("\n1. First 7 rows: \n")
     print(data.head(7))
 
-    print("\n2. Last 7 rows: \n2")
+    print("\n2. Last 7 rows: \n")
     print(data.tail(7))
 
     X = data.drop('Outcome', axis=1)
